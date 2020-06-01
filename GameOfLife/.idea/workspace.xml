@@ -36,7 +36,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="ScalaTest.GameOfLifeTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="gameoflife.Main" />
       <module name="GameOfLife" />
@@ -60,25 +60,104 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="GameOfLifeTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="GameOfLife" />
       <option name="allowRunningInParallel" value="false" />
-      <option name="javaOptions" value="-Djline.terminal=NONE" />
-      <option name="myConsoleArgs" value="" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="GameOfLifeTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOfLifeTest.countTheAliveNeighborsTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="GameOfLife" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="GameOfLifeTest" />
+      <option name="testName" value="countTheAliveNeighborsTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOfLifeTest.formatGridTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="GameOfLife" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="GameOfLifeTest" />
+      <option name="testName" value="formatGridTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOfLifeTest.transitionGridToadPatternTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="GameOfLife" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="GameOfLifeTest" />
+      <option name="testName" value="transitionGridToadPatternTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="sbt Task.Main" />
-      <item itemvalue="Scala REPL.Scala REPL" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="sbt Task.Main" />
+      <item itemvalue="ScalaTest.GameOfLifeTest.transitionGridToadPatternTest" />
+      <item itemvalue="ScalaTest.GameOfLifeTest.formatGridTest" />
+      <item itemvalue="ScalaTest.GameOfLifeTest.countTheAliveNeighborsTest" />
+      <item itemvalue="ScalaTest.GameOfLifeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.GameOfLifeTest" />
+        <item itemvalue="ScalaTest.GameOfLifeTest.countTheAliveNeighborsTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Scala REPL.Scala REPL" />
+        <item itemvalue="ScalaTest.GameOfLifeTest.formatGridTest" />
+        <item itemvalue="ScalaTest.GameOfLifeTest.transitionGridToadPatternTest" />
       </list>
     </recent_temporary>
   </component>
@@ -109,8 +188,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3181132606815" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="2935300131" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1778106672" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2620759781" />
       </map>
     </option>
@@ -129,50 +207,71 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="192" key="#Project_Structure" timestamp="1590566375975">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="440" y="162" key="#Notifications" timestamp="1590983994734">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="440" y="162" key="#Notifications/0.23.1680.947@0.23.1680.947" timestamp="1590983994734" />
+    <state x="440" y="196" key="#Project_Structure" timestamp="1590983924612">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="440" y="192" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1590566375975" />
+    <state x="440" y="196" key="#Project_Structure/0.23.1680.947@0.23.1680.947" timestamp="1590983924612" />
     <state x="304" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590566551644">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590566551644" />
+    <state x="100" y="123" width="1480" height="747" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590993610710">
+      <screen x="0" y="23" width="1680" height="948" />
+    </state>
+    <state x="100" y="123" width="1480" height="747" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.948@0.23.1680.948" timestamp="1590993610710" />
     <state x="584" y="450" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1590566419176">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="584" y="450" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590566419176" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590651059530">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590995326843">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590651059530" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590651059529">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590995326843" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.948@0.23.1680.948" timestamp="1590993613792" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590995326842">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590651059529" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590651059528">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590995326842" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.948@0.23.1680.948" timestamp="1590993613789" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590995326842">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590651059528" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590651059529">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590995326842" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.948@0.23.1680.948" timestamp="1590993613789" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590995326843">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590651059529" />
-    <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1590584662697">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590995326843" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.948@0.23.1680.948" timestamp="1590993613791" />
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1590909492062">
+      <screen x="0" y="23" width="1680" height="948" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590584662697" />
-    <state width="1638" height="363" key="GridCell.Tab.1.center" timestamp="1590584662695">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom/0.23.1680.948@0.23.1680.948" timestamp="1590909492062" />
+    <state width="1638" height="363" key="GridCell.Tab.1.center" timestamp="1590909492061">
+      <screen x="0" y="23" width="1680" height="948" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590584662695" />
-    <state width="1638" height="363" key="GridCell.Tab.1.left" timestamp="1590584662694">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="363" key="GridCell.Tab.1.center/0.23.1680.948@0.23.1680.948" timestamp="1590909492061" />
+    <state width="1638" height="363" key="GridCell.Tab.1.left" timestamp="1590909492060">
+      <screen x="0" y="23" width="1680" height="948" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590584662694" />
-    <state width="1638" height="363" key="GridCell.Tab.1.right" timestamp="1590584662696">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="363" key="GridCell.Tab.1.left/0.23.1680.948@0.23.1680.948" timestamp="1590909492060" />
+    <state width="1638" height="363" key="GridCell.Tab.1.right" timestamp="1590909492061">
+      <screen x="0" y="23" width="1680" height="948" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590584662696" />
+    <state width="1638" height="363" key="GridCell.Tab.1.right/0.23.1680.948@0.23.1680.948" timestamp="1590909492061" />
     <state x="349" y="156" key="SettingsEditor" timestamp="1590570898579">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

@@ -20,16 +20,17 @@ object Main {
       }
 
     val transposedCoordinates = aliveCellCoordinates.transpose
-    val rows = transposedCoordinates(0).max
-    val columns = transposedCoordinates(1).max
+    val columns = transposedCoordinates(0).max
+    val rows = transposedCoordinates(1).max
 
     val grid = new Grid(rows,columns)
     grid.fillGrid(aliveCellCoordinates)
-    grid.displayGrid()
-
-    println("******************")
-    val newCoordinates= grid.transitionOnGrid()
-    grid.displayGrid()
+    println("[Info] : Grid is shown with padding of two cells on all directions")
+    println("Current State :")
+    println(grid.formatGrid())
+    var newCoordinates= grid.transitionOnGrid()
+    println("Transitioned State: ")
+    println(grid.formatGrid())
     newCoordinates.foreach(println)
 
   }
