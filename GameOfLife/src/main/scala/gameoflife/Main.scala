@@ -10,28 +10,28 @@ object Main {
 
     println("Please enter the number of alive cells")
     val aliveCells = StdIn.readInt()
-    val aliveCellCoordinates = Array.ofDim[Int](aliveCells,2)
 
-    for(i<-0 until aliveCellCoordinates.length)
-      {
-        val aliveCellCoordinatesString=StdIn.readLine().split(" ")
-        aliveCellCoordinates(i)(0)=aliveCellCoordinatesString(0).toInt
-        aliveCellCoordinates(i)(1)=aliveCellCoordinatesString(1).toInt
+    val aliveCellCoordinates=
+      for(i<-0 until aliveCells)
+      yield {
+        val inputCoordinates=StdIn.readLine().split(" ").map(str=>str.toInt)
+        (inputCoordinates(0),inputCoordinates(1))
       }
 
-    val transposedCoordinates = aliveCellCoordinates.transpose
-    val columns = transposedCoordinates(0).max
-    val rows = transposedCoordinates(1).max
+    println("Input Done")
+    val columns = aliveCellCoordinates.maxBy(_._1)._1
+    val rows = aliveCellCoordinates.maxBy(_._2)._2
 
     val grid = new Grid(rows,columns)
-    grid.fillGrid(aliveCellCoordinates)
+    grid.fillGrid(aliveCellCoordinates.toList)
     println("[Info] : Grid is shown with padding of two cells on all directions")
     println("Current State :")
     println(grid.formatGrid())
-    var newCoordinates= grid.transitionOnGrid()
+    var newCoordinates= grid.transitionOnGrid(aliveCellCoordinates.toList)
     println("Transitioned State: ")
+    grid.fillGrid(newCoordinates)
     println(grid.formatGrid())
-    newCoordinates.foreach(println)
+    newCoordinates.foreach(print)
 
   }
 

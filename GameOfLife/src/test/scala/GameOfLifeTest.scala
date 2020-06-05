@@ -5,10 +5,10 @@ class GameOfLifeTest extends FunSuite {
 
   test("transitionGridBlinkerPatternTest") {
 
-    val cellCoordinates = Array(Array(1,0),Array(1,1),Array(1,2))
+    val cellCoordinates = List((1,0),(1,1),(1,2))
     val testGrid = new Grid(1,2)
     testGrid.fillGrid(cellCoordinates)
-    val actualResult= testGrid.transitionOnGrid()
+    val actualResult= testGrid.transitionOnGrid(cellCoordinates)
     val expectedResult = List((0,1),(1,1),(2,1))
     assert(expectedResult==actualResult)
 
@@ -16,10 +16,10 @@ class GameOfLifeTest extends FunSuite {
 
   test("transitionGridBlockPatternTest") {
 
-    val cellCoordinates = Array(Array(1,1),Array(1,2),Array(2,1),Array(2,2))
+    val cellCoordinates = List((1,1),(1,2),(2,1),(2,2))
     val testGrid = new Grid(2,2)
     testGrid.fillGrid(cellCoordinates)
-    val actualResult= testGrid.transitionOnGrid()
+    val actualResult= testGrid.transitionOnGrid(cellCoordinates)
     val expectedResult = List((1,1),(2,1),(1,2),(2,2))
     assert(expectedResult==actualResult)
 
@@ -27,10 +27,10 @@ class GameOfLifeTest extends FunSuite {
 
   test("transitionGridBoatPatternTest") {
 
-    val cellCoordinates = Array(Array(0,1),Array(1,0),Array(2,1),Array(0,2),Array(1,2))
+    val cellCoordinates = List((0,1),(1,0),(2,1),(0,2),(1,2))
     val testGrid = new Grid(2,2)
     testGrid.fillGrid(cellCoordinates)
-    val actualResult= testGrid.transitionOnGrid()
+    val actualResult= testGrid.transitionOnGrid(cellCoordinates)
     val expectedResult = List((1,0),(0,1),(2,1),(0,2),(1,2))
     assert(expectedResult==actualResult)
 
@@ -38,10 +38,10 @@ class GameOfLifeTest extends FunSuite {
 
   test("transitionGridToadPatternTest") {
 
-    val cellCoordinates = Array(Array(1,1),Array(1,2),Array(1,3),Array(2,2),Array(2,3),Array(2,4))
+    val cellCoordinates = List((1,1),(1,2),(1,3),(2,2),(2,3),(2,4))
     val testGrid = new Grid(4,2)
     testGrid.fillGrid(cellCoordinates)
-    val actualResult= testGrid.transitionOnGrid()
+    val actualResult= testGrid.transitionOnGrid(cellCoordinates)
     val expectedResult = List((1,1),(2,1),(0,2),(3,3),(1,4),(2,4))
     assert(expectedResult==actualResult)
 
@@ -49,7 +49,7 @@ class GameOfLifeTest extends FunSuite {
 
   test("formatGridTest") {
 
-    val cellCoordinates = Array(Array(0, 1), Array(1, 2))
+    val cellCoordinates = List((0, 1), (1, 2))
     val testGrid = new Grid(2, 1)
     testGrid.fillGrid(cellCoordinates)
     val actualResult = testGrid.formatGrid()
@@ -59,10 +59,10 @@ class GameOfLifeTest extends FunSuite {
 
   test("countTheAliveNeighborsTest"){
 
-    val cellCoordinates = Array(Array(1,1),Array(1,2),Array(2,1),Array(2,2))
+    val cellCoordinates = List((1,1),(1,2),(2,1),(2,2))
     val testGrid = new Grid(2,2)
     testGrid.fillGrid(cellCoordinates)
-    assert(3==testGrid.countTheAliveNeighbors(3,4))
+    assert(3==testGrid.countTheAliveNeighbors(3,3,cellCoordinates.map(x=>(x._2+2,x._1+2))))
 
   }
 }
